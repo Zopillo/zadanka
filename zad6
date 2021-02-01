@@ -1,0 +1,34 @@
+def zamarz(x):
+    F = 32 + x * 1.8
+    if(F<33):
+        print("Woda zamarza")
+    elif(F>211):
+        print("woda wrze")
+    return F
+
+def CnaF(x):
+    F = 32+x*1.8
+    return F
+def FnaC(x):
+    C = (x-32)/1.8
+    return C
+def CnaK(x):
+    K = x+273.15
+    return K
+def KnaC(x):
+    C = x-273.15
+    return C
+def KnaF(x):
+    F = x-273.15
+    F = 32 + F *1.8
+    return F
+def FnaK(x):
+    K = (x-32)/1.8
+    K = K+273.15
+    return K
+def CnaR(x):
+#Celcjusz na Rankiny
+    C = (x+273.15)*1.8
+    return C
+print(CnaR(50))
+
