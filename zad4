@@ -1,0 +1,5 @@
+def producencikłamio(x):
+    z = int(input("Podaj pojemnośc dysku w gigabajtach:"))
+    z = z*1000000000
+    return round(z/1024/1024/1024,2)
+print(producencikłamio(2),"tyle tak naprawdę ma twój dysk gb")
