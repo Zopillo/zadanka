@@ -1,0 +1,8 @@
+def kalkulator(x):
+    netto = x*0.68
+    brutto = x
+# odejmuję 32% bo tyle wychodzi suma podatków: emerytalnych, rentowych itd
+    return netto
+z = float(input("Podaj kwotę brutto: "))
+
+print(kalkulator(z),"zł zarabiasz")
