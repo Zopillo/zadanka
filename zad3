@@ -1,0 +1,73 @@
+def quiz(x):
+    pytania = ["Co to zip?", "Jak się nazywa edytor graficzny windows?", "Najpopularniejszy format plików muzycznych to?",
+           "Ile bitów ma jeden bajt?", "Który dysk jest szybszy: Hdd, czy Ssd?",
+           "Czy opłaca się aktualnie składać komputer?", "Windows, czy Linux?", "Jak binarnie zapisać 12?",
+           "Czy komputer może się przegrzać?", "Jak nazywa się przeglądarka od google?"]
+    z = 9
+    pkt = 0
+    while z>=0:
+        print(pytania[z])
+        odp = input("podaj odpowiedź:")
+        if z==9 and odp == "Chrome":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==9 and odp !="Chrome":
+            print("nie zgadłeś")
+        elif z==8 and odp == "Tak":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==8 and odp !="Tak":
+            print("nie zgadłeś")
+        elif z==7 and odp == "1100":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==7 and odp !="1100":
+            print("nie zgadłeś")
+        elif z==6 and odp == "Linux":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==6 and odp !="Linux":
+            print("nie zgadłeś")
+        elif z==5 and odp == "Nie":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==5 and odp !="Nie":
+            print("nie zgadłeś")
+        elif z==4 and odp == "Ssd":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==4 and odp !="Ssd":
+            print("nie zgadłeś")
+        elif z==3 and odp == "8":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==3 and odp !="8":
+            print("nie zgadłeś")
+        elif z == 2 and odp == "Mp3":
+                pkt = pkt + 1
+                print("zgadłeś")
+        elif z == 2 and odp != "Mp3":
+                print("nie zgadłeś")
+        elif z==1 and odp == "Paint":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==1 and odp !="Paint":
+            print("nie zgadłeś")
+        elif z==0 and odp == "Kompresja plików":
+            pkt = pkt+1
+            print("zgadłeś")
+        elif z==0 and odp !="Kompresja plików":
+            print("nie zgadłeś")
+        z = z-1
+    if pkt<=2:
+        print("dostałeś",pkt,"punktów i nie zdałeś")
+    elif pkt<=4 and pkt>2:
+        print("dostałeś",pkt,"i zdajesz na 3")
+    elif pkt<=6 and pkt>4:
+        print("dostałeś",pkt,"i zdajesz na 4")
+    elif pkt<=9 and pkt>6:
+        print("dostałeś",pkt,"i zdajesz na 5")
+    elif pkt==10:
+        print("brawo, zrobiłeś bezbłędnie")
+    return pkt
+print(quiz(2))
