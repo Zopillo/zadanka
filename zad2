@@ -1,0 +1,8 @@
+def koszt(brutto):
+    renta = brutto*0.065
+    emerytura = brutto*0.0976
+    wypadek = brutto*0.0167
+    fgsp = brutto*0.01
+    return brutto + renta + emerytura + wypadek + fgsp
+brutto = float(input("Podaj zarobek brutto: "))
+print(koszt(brutto),"tyle wydał na Ciebie pracodawca po dodaniu podatków")
